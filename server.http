@@ -1,0 +1,10 @@
+###注册的接口
+post  http://10.245.43.93:3000/api/boards/getItemBoardsInfo
+
+# Content-Type: application/json
+
+{
+    "item":"管理员公告"
+}
+###
+GET  http://10.245.43.93:3000/api//boards/getAllBoardsList
