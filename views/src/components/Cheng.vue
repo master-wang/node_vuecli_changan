@@ -137,7 +137,7 @@ export default {
             var that=this;
             $.ajax({
                 type:'post',
-                url:'http://localhost:3000/api/user/register',
+                url:'http://111.230.155.152:3000/api/user/register',
                 data:that.register_userInfo,
                 dataType:'json',
                 success:function(result){
@@ -160,7 +160,7 @@ export default {
             var that=this;
             $.ajax({
                 type:'post',
-                url:'http://localhost:3000/api/user/login',
+                url:'http://111.230.155.152:3000/api/user/login',
                 data:that.login_userInfo,
                 dataType:'json',
                 success:function(result){
@@ -182,7 +182,7 @@ export default {
             var that=this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/logout',
+                url:'http://111.230.155.152:3000/api/user/logout',
                 success:function(result){
                     console.log(result);
                     that.loginOut_tip=result.message;
