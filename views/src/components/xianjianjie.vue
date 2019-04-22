@@ -1,5 +1,5 @@
 <template>
-    <div id="theme-content">
+    <div id="theme-content" class="test">
         <div class="baiyechuang" id="main">
                 
                     <!-- 百叶窗 -->
@@ -273,7 +273,8 @@ export default {
     }
 }
 </script>
-<style scope>
+<style scope lang="scss">
+.test{
 #theme-content {
     position: relative;
     padding-left: 50px;
@@ -1350,5 +1351,7 @@ p.codrops-demos a.current-demo:hover{
 	.cr-container label{
 		display: none;
 	}
+}
+
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="haoyou">
         <div class="box">
 
             <div class="box1">
@@ -107,7 +107,7 @@ textarea:focus {
     outline: none;
 }
 
-.box {
+.haoyou .box {
     position: absolute;
     width: 100%;
     height: 600px;
@@ -115,7 +115,7 @@ textarea:focus {
     margin-top: 60px;
 }
 
-.box1 {
+.haoyou .box1 {
     float: left;
     overflow-y: scroll;
     left: 0;
@@ -124,27 +124,27 @@ textarea:focus {
     background-color: rgb(231, 227, 227);
 }
 
-.box1 div {
+.haoyou .box1 div {
     left: 0;
     width: 100%;
     height: 60px;
     border-bottom:1px solid #ccc;
     line-height: 60px;
 }
-.box1 div:hover{
+.haoyou .box1 div:hover{
     background-color: rgba(136, 132, 132, 0.3);
 }
-.box1 .box1-nav1{
+.haoyou .box1 .box1-nav1{
     top: 0px;
 }
-.box1 .box1-nav2{
+.haoyou .box1 .box1-nav2{
     top: 65px;
 }
-.box1 .box1-nav3{
+.haoyou .box1 .box1-nav3{
     top: 130px;
 }
 
-.box1 div img {
+.haoyou .box1 div img {
     margin-top: 10px;
     margin-left: 30px;
     float: left;
@@ -153,20 +153,20 @@ textarea:focus {
     border-radius:50%;
 }
 
-.box1 div span {
+.haoyou .box1 div span {
     left: 5px;
     top: 20px;
     display: inline-block;
 }
 
-.box2 {
+.haoyou .box2 {
     float: right;
     right: 0;
     width: 70%;
     height: 100%;
     background: rgba(112, 93, 93, 0.3);
 }
-.box2-nav{
+.haoyou .box2-nav{
     height: 30px;
     width:100%;
     background-color: rgb(245, 243, 243);
@@ -176,17 +176,17 @@ textarea:focus {
     line-height: 30px;
     text-align: center;
 }
-.box2-nav1 {
+.haoyou .box2-nav1 {
     width: 100%;
     height: 480px;
     overflow-y: scroll
 }
 
-.box2-nav1 .message {
+.haoyou .box2-nav1 .message {
     width: 100%;
     height: 100%;
 }
-.box2-nav1 .message img{
+.haoyou .box2-nav1 .message img{
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -194,7 +194,7 @@ textarea:focus {
     border-radius:50%;
     display: inline-block
 }
-.box2-nav1 .message span{
+.haoyou .box2-nav1 .message span{
     width: 80%;
     height: 60px;
     margin-right: 10px;
@@ -202,34 +202,34 @@ textarea:focus {
     display: inline-block
 }
 
-.box2-nav1 .message .left2, .box2-nav1 .message .right1 {
+.haoyou .box2-nav1 .message .left2, .box2-nav1 .message .right1 {
     word-wrap:break-word;  
     word-break:break-all;  
     padding: 5px;
     white-space: wrap;
 }
 /* 我的代码 */
-.box2-nav1 .message .chatitem {
+.haoyou .box2-nav1 .message .chatitem {
     width: 100%;
     margin-top: 5px;
     border:1px solid #ccc;
     border-radius: 20px;
 }
-.box2-nav1 .message li{
+.haoyou .box2-nav1 .message li{
     
     width: 100%;
     line-height: 60px;
 }
-.box2-nav1 .message li.left1 img{
+.haoyou .box2-nav1 .message li.left1 img{
     float: left;
 }
 
-.box2-nav1 .message li.right1 img{
+.haoyou .box2-nav1 .message li.right1 img{
     float: right;
 }
 
 /* 你的代码 */
-.box2-nav1 .message .left1 {
+.haoyou .box2-nav1 .message .left1 {
     float: left;
     color: rgb(63, 54, 54);
     font-size: 28px;
@@ -238,25 +238,25 @@ textarea:focus {
 
 
 
-.box2-nav1 .message  .right1 {
+.haoyou .box2-nav1 .message  .right1 {
     float: right;
     text-align: right;
     width: 100;
     font-size: 28px;
     color: rgb(255,157,0);
 }
-.box2-nav1 .message .right2 {
+.haoyou .box2-nav1 .message .right2 {
     float: right;
     width: 100;
  
 }
 
-.box2-nav2 {
+.haoyou .box2-nav2 {
     width: 100%;
     height: 25%;
 }
 
-.box2-nav2 textarea {
+.haoyou .box2-nav2 textarea {
     top: 0;
     left: 0;
     width: 60%;
@@ -266,7 +266,7 @@ textarea:focus {
     border: none;
 }
 
-.box2-nav2 .submit {
+.haoyou .box2-nav2 .submit {
     width: 20%;
     height: 20%;
     margin: 7px;
