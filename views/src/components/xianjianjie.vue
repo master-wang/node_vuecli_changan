@@ -755,12 +755,13 @@ margin: 35px;
         height: 600px;
         position: absolute;
         top: 2450px;
+        right: -100px;
       }
       .food-left{
         margin: 0 40px;
         position: absolute;
-width: 550px;
-height: 500px;
+        width: 550px;
+        height: 500px;
       }
       .food-left-title{
         position: absolute;
@@ -975,7 +976,7 @@ transform: rotate(-90deg);
 .baiyechuang .container{
     position: absolute!important;
     top:1000px;
-    right: -200px;
+    right: -378px;
 	width: 100%;
 	height: 100%;
 	position: relative;

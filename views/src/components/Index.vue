@@ -1,5 +1,5 @@
 <template>
-  <div id="theme-content" @mouseleave="showblack()">
+  <div id="theme-content" >
     <!-- 文章右侧的简介 -->
     <div class="sider">
       <p>{{pointArical}}</p>
@@ -13,21 +13,20 @@
       </div>
     </div>
 
-    <img class="denglong" src="../assets/denglong.png" alt="">
     <!-- 时间轴 -->
     <div class="box">
-        <ul class="box2-1" @mouseover="hideblack()">
+        <ul class="box2-1" >
           <li class="box2-1-1 boxh"><img src="../assets/cicle.png" />
-            <span>西周</span>
+            <span><router-link to="/dytang">唐朝</router-link></span>
             <p class="boxp">在西周时称为“丰镐”。“丰镐”，是周文王和周武王分别修建的丰京和镐京的合称。后者为政治中心，前者为宗教、文化中心，合称“宗周”，为西安建城之始。
               武王灭商建立周王朝后，以丰镐为都，为西安作为都城之始。</p>		  
           </li>
           <li class="box2-1-2  boxh"><img src="../assets/cicle.png" />
-            <span>秦朝</span>
+            <span>西安</span>
             <p class="boxp">秦朝时都城为“咸阳”，阿房宫大部分面积在今西安市境内，兵马俑和秦陵在今西安市境内（位于西安市临潼区）</p>	
           </li>
           <li class="box2-1-3  boxh"><img src="../assets/cicle.png" />
-            <span>西汉</span>
+            <span><router-link to="/dyxihan">西汉</router-link></span>
             <p class="boxp">西汉时，刘邦在长安（今西安城西北郊汉城）建立西汉王朝，定都关中，取当地长安乡之含意，立名“长安”，意即“长治久安”。
               丝绸之路开通后，长安成为东方文明的中心，史称“西有罗马，东有长安”。</p>	
           </li>
@@ -48,13 +47,7 @@
       
     </div>
     <!-- 屏幕的黑屏 -->
-    <div class="screenblac" @mouseover="hideblack()" >
-      <div class="text">
-          <h1>揭开神秘面纱</h1>
-          <h2><span>古城</span><span>____________西安</span></h2>
-          <img src="../assets/wang.png" alt="">
-      </div>
-    </div>
+    
   </div>
 </template>
 
@@ -86,12 +79,7 @@ export default {
     }
   },
   methods:{
-    hideblack(){
-      $('.screenblac').eq(0).animate({opacity:'0.2'},"slow");
-    },
-    showblack(){
-      $('.screenblac').eq(0).animate({opacity:'0.8'},"slow");
-    },
+    
     PointH1(){
       var that = this;
       this.pointH1 = this.app_box.jianjie.substring(0,this.Hpop)+' |';
@@ -193,7 +181,7 @@ export default {
     font-weight: bold;
     color: #fff;
     position: absolute;
-    top:-20px;
+    top:-40px;
     z-index: 1;
 }
 #theme-content .btn:hover {

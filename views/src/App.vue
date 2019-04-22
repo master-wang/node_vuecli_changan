@@ -8,10 +8,7 @@
           <a class="navbar-brand" href="#" style="font-size:30px:margin-left:100px;" ><h1><router-link to='/changan3D' class="linghtBlue"> 3D长安</router-link></h1> </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-middle">
-            <li><a href="#"><img class="jian-top" src="./assets/koutujian1.png" alt="" style="position:absolute;top:-66px;left:0px;opacity:0;transform:rotate(-150deg)" ></a></li>
-            <li><a href="#"><img class="jian-top2" src="./assets/koutujian1.png" alt="" style="position:absolute;top:-66px;left:1000px;opacity:0;transform:rotate(30deg)" ></a></li>
-          </ul>
+          
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><h2><router-link to='/Cheng/footprint/Footprintlist' class="linghtBlue"> 城参与</router-link></h2> </a></li>
           </ul>
@@ -21,7 +18,7 @@
     <!-- 右部图片展示历史遗迹 -->
     <div class="row">
       <div id="boards-imgs">
-        <div v-for="(item,index) in dy" :key="index" @mouseenter="hidetint($event)" @click="select(index,item._id)" @mouseleave="showtint($event)">
+        <div v-for="(item,index) in dy" :key="index"  @click="select(index,item._id)" >
           <router-link to='/Dynasty' href="#" class="thumbnail" >
             <div class="boards-img"  >
               <img :src="item._img" alt="" style="position:absolute;width:240px;height: 170px;">
@@ -37,6 +34,7 @@
       </div>
 
     </div>
+
     <!-- 主题内容 -->
     <div class="boards-artica"  :style="app_box.note">
       <transition :name="transitionName"> 
@@ -72,7 +70,7 @@ export default {
           }
         },
         {
-          name:'汉朝',
+          name:'西汉',
           note:{
             backgroundImage: "url(" + require("./assets/xian2.jpg") + ")",
             backgroundRepeat: "no-repeat",
@@ -179,7 +177,6 @@ export default {
         $(this).animate({right: '10px',opacity:1},(index+2)*700);
       });
       $('#app .navbar .jian-top').animate({left:"500px",opacity:1},4000);
-
       $('#app .navbar .jian-top').css("transform","rotate(-140deg)");
       $('#app .navbar .jian-top2').animate({left:"500px",opacity:1},4000);
       $('#app .navbar .jian-top2').css("transform","rotate(20deg)")
@@ -330,6 +327,12 @@ body{
   font-size:1em;
   color:#228DFF;
   font-family:Iceland;
+  text-shadow: 0 0 20px #fdec84,
+            10px -10px 30px #ffae35,
+            20px -20px 40px #ec760c,
+            -20px -60px 50px #cd4607,
+            0px -80px 60px #973717,
+            10px -40px 70px #451b0e;
 }
 .linghtBlue:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
@@ -340,6 +343,7 @@ body{
   font-size:1em;
   color:#FF1177;
   font-family:Iceland;
+  text-shadow: 2px 2px 2px whitesmoke；
 }
 .linghtRed:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;

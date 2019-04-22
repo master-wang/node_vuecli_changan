@@ -254,6 +254,7 @@ h1{
 .middle{
     width:1600px!important;
     height: 800px;
+    padding-right:200px;
 }
 .article{
     float: left;
@@ -264,7 +265,7 @@ h1{
 }
 .aside{
     position: absolute;
-    right: 10px;
+    right: 150px;
     top: 20px;
     margin-left: 10px;
     width: 300px;

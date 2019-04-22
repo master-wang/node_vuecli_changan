@@ -29,6 +29,9 @@ import xiandesc from '@/components/xiandesc'
 import changan3D from '@/components/changan3D'
 import xianjianjie from '@/components/xianjianjie'
 import xianquanjing from '@/components/xianquanjing'
+
+import dytang from '@/components/dytang'
+import dyxihan from '@/components/dyxihan'
 Vue.use(Router)
 Vue.use(resour)
 
@@ -38,6 +41,16 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/dytang',
+      name: 'dytang',
+      component: dytang
+    },
+    {
+      path: '/dyxihan',
+      name: 'dyxihan',
+      component: dyxihan
     },
     {
       path: '/xiandesc',

@@ -1,9 +1,7 @@
 <template>
     <div class="AdminList" style="text-align:center;color:black;margin-top:60px;">
         <h1>朝代列表</h1>
-        <label for="">
-            朝代：<input  v-model="searchname"   type="text" class="form-control" placeholder="朝代：">
-        </label>
+        
         <div class="row">
             <div class="col-xs-6 col-md-3" v-for="(dynaty,index) in dy" :key="index">
                 <a href="#" class="thumbnail">

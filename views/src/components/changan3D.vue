@@ -3,7 +3,7 @@
         <div class="bbbb">
 
         
-        <div id="wrap">
+        <div id="wrap3">
             <div class="sence">
                 <ul>
                     <li>
@@ -55,7 +55,7 @@ export default {
         //图片自动旋转
         var qq=document.body;
 		var oSen=$('.sence')[0];
-		var aLi=$('#wrap .sence li');
+		var aLi=$('#wrap3 .sence li');
 
 		var aLiLen=aLi.length;
 		var Deg=360/aLiLen;
@@ -134,21 +134,21 @@ export default {
     height: 930px;
     background: rgba(0,0,0,0.5);
 }
-#wrap ul{
+#wrap3 ul{
     list-style-type: none;
 } 
-#wrap img{
+#wrap3 img{
     width: 120px;
     height: 180px;
     vertical-align: middle;
 }
-#wrap{
+#wrap3{
     position: absolute;
     perspective: 800px;
     top:20%;
     left:40%;
 }
-#wrap .sence{
+#wrap3 .sence{
     width:120px;
     height: 180px;
     margin: 250px auto;
@@ -156,16 +156,16 @@ export default {
     transform-style: preserve-3d;
     transform: rotateX(-15deg) rotateY(0deg);
 }
-#wrap .sence ul li{
+#wrap3 .sence ul li{
     position: absolute;
     box-shadow: 0 0 8px #f9f;
     border-radius: 5px;
     transform: rotateY(0deg) translateZ(0px);
 }
-#wrap .sence ul li img{
+#wrap3 .sence ul li img{
     -webkit-box-reflect: below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 30%,rgba(0,0,0,0.5) 100%);
 }
-#wrap .sence p{
+#wrap3 .sence p{
     width: 700px;
     height: 700px;
     background: -webkit-radial-gradient(center,50% 50%,rgba(244,22,234,0.2),rgba(0,0,0,0));
