@@ -21,7 +21,7 @@ module.exports = new mongoose.Schema({
     },
     head_img:{//头像
         type:String,
-        default:'http://localhost:3000/upimgs/touxiang.jpg'
+        default:'http://111.230.155.152:3000/upimgs/touxiang.jpg'
     },
     isAdmin:{//是否是管理员
         type:Boolean,
