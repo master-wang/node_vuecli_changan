@@ -10,9 +10,9 @@ const multer = require('multer');
 const path = require('path');
 const lastdir = path.resolve(__dirname, '..');
 var Bod_imgs = [];
-var B_path = 'http://localhost:3000/upimgs/';
+var B_path = 'http://111.230.155.152:3000/upimgs/';
 
-var imgpath = 'http://localhost:3000/upimgs/';
+var imgpath = 'http://111.230.155.152:3000/upimgs/';
 var user_img = ''
 var storage = multer.diskStorage({
     destination: path.join(lastdir,'/public/upimgs'),
@@ -26,7 +26,7 @@ var storage = multer.diskStorage({
         //处理多张图片
         B_path = B_path + imgname;
         Bod_imgs.push(B_path);
-        B_path = 'http://localhost:3000/upimgs/';
+        B_path = 'http://111.230.155.152:3000/upimgs/';
 
         cb(null, imgname);
     }
@@ -152,7 +152,7 @@ router.post('/user/UpateInfo',upload.single('photo'),function(req,res){
         _id : req.body._id,
         head_img:imgpath
     }).then(function(info){
-        imgpath = 'http://localhost:3000/upimgs/';
+        imgpath = 'http://111.230.155.152:3000/upimgs/';
         user_img = '';
         Bod_imgs = [];
         return User.findOne({
@@ -278,6 +278,8 @@ router.post('/boards/addInfoImg',upload.array("file",20),function(req,res){
         b_disc,b_disc,
         b_release:br_id
     }).save().then(function(Boardinfo){
+        imgpath = '/public/upimgs/';
+        user_img = '';
         Bod_imgs = []
         console.log(Boardinfo);
         responData.message = '图片上传成功成功！';
