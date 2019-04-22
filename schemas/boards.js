@@ -4,7 +4,7 @@ module.exports = new mongoose.Schema({
     item:String,//什么公告
     b_img:{//公告照片
         type:Array,
-        default:['http://localhost:3000/upimgs/board.jpg']
+        default:['http://111.230.155.152:3000/upimgs/board.jpg']
     },
     b_theme:{//主题
         type:String,
