@@ -41,10 +41,10 @@ export default {
         },
         deletedynaty(dynaty_id){
             var that = this;
-            axios.get('http://localhost:3000/api/dynary/delete?dynaty_id='+dynaty_id).then(function(res){  // axios 的请求方式
+            axios.get('http://111.230.155.152:3000/api/dynary/delete?dynaty_id='+dynaty_id).then(function(res){  // axios 的请求方式
                 console.log(res);
                 alert("删除成功！");
-                axios.get('http://localhost:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
+                axios.get('http://111.230.155.152:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
                     that.$store.dispatch('changedy',res.data.DynatiesList);
                 })
             })
@@ -72,7 +72,7 @@ export default {
     },
     mounted(){
         var that = this;
-        axios.get('http://localhost:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
+        axios.get('http://111.230.155.152:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
             that.seachListL = res.data.DynatiesList;
             that.DynatiesList = res.data.DynatiesList;
         })

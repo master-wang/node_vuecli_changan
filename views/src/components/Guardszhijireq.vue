@@ -64,7 +64,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/getAllHailsInfo?_id='+that.userInfo._id,
+                url:'http://111.230.155.152:3000/api/user/getAllHailsInfo?_id='+that.userInfo._id,
                 success:function(result){
                     console.log(result)
                     that.hailsIdList=result.Hailsinfo;
@@ -76,7 +76,7 @@ export default {
             console.log(req_id);
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/FriendRequestnotAgree?req_id='+req_id,
+                url:'http://111.230.155.152:3000/api/user/FriendRequestnotAgree?req_id='+req_id,
                 success:function(result){
                     console.log(result)
                     that.hailsIdList=result.Hailsinfo;
@@ -89,7 +89,7 @@ export default {
             console.log(from_user_id);
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/FriendRequestAgree?from_user_id='+from_user_id+'&to_user='+that.userInfo._id,
+                url:'http://111.230.155.152:3000/api/user/FriendRequestAgree?from_user_id='+from_user_id+'&to_user='+that.userInfo._id,
                 success:function(result){
                     console.log(result)
                     that.hailsIdList=result.Hailsinfo;

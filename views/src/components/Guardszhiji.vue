@@ -33,7 +33,7 @@ export default {
             console.log(0)
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/getAllHailsInfo?_id='+that.userInfo._id,
+                url:'http://111.230.155.152:3000/api/user/getAllHailsInfo?_id='+that.userInfo._id,
                 success:function(result){
                     console.log(result)
                     that.hailsIdList=result.Hailsinfo;

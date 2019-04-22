@@ -77,7 +77,7 @@ export default {
             }else{
                 $.ajax({
                     type:'post',
-                    url:'http://localhost:3000/api/dynary/add',
+                    url:'http://111.230.155.152:3000/api/dynary/add',
                     data:params,
                     dataType: 'JSON',  
                     cache: false,  
@@ -85,7 +85,7 @@ export default {
                     contentType: false,
                     success:function(result){
                         console.log(result);
-                        axios.get('http://localhost:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
+                        axios.get('http://111.230.155.152:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
                             that.$store.dispatch('changedy',res.data.DynatiesList);
                         })
                         that.$router.push({

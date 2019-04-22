@@ -49,7 +49,7 @@ export default {
             else{
                 $.ajax({
                     type:'post',
-                    url:'http://localhost:3000/api/user/chatsAdd',
+                    url:'http://111.230.155.152:3000/api/user/chatsAdd',
                     data:data,
                     dataType:'json',
                     success:function(result){
@@ -66,7 +66,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/chatInfoGetAll?charId='+char_Id,
+                url:'http://111.230.155.152:3000/api/user/chatInfoGetAll?charId='+char_Id,
                 success:function(result){
                     console.log(result)
                     that.chatmag = '';
@@ -81,7 +81,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/chatInfoGetAll?charId='+char_Id,
+                url:'http://111.230.155.152:3000/api/user/chatInfoGetAll?charId='+char_Id,
                 success:function(result){
                     console.log(result)
                     that.chats = result.newinfo.chatInfos;

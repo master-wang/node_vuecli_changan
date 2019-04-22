@@ -186,7 +186,7 @@ export default {
     },
     getAllDynaties(){
       var that = this;
-      axios.get('http://localhost:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
+      axios.get('http://111.230.155.152:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
         that.dynaties = res.data.DynatiesList;
         // that.dynaties.forEach(function(item){
         //   var imgurl =  item._img;
@@ -220,7 +220,7 @@ export default {
     this.getAllDynaties();
     this.userInfo=JSON.parse(localStorage.getItem('userInfo'));
     var that = this;
-    axios.get('http://localhost:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
+    axios.get('http://111.230.155.152:3000/api/dynary/getAllDynatiesList').then(function(res){  // axios 的请求方式
       console.log (that.$store);
       that.$store.commit('changeDynaty',res.data.DynatiesList);
       that.seachListL = res.data.DynatiesList;

@@ -1,10 +1,12 @@
 ###注册的接口
-post  http://10.245.43.93:3000/api/boards/getItemBoardsInfo
+post  http://111.230.155.152:3000/api/user/register
 
 # Content-Type: application/json
 
 {
-    "item":"管理员公告"
+    "username":"wang",
+    "password":"wang",
+    "repassword":"wang"
 }
 ###
-GET  http://10.245.43.93:3000/api//boards/getAllBoardsList
+GET  http://111.230.155.152:3000/api/dynary/getAllDynatiesList

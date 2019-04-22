@@ -122,7 +122,7 @@ export default {
       $("#theme-content .comment").eq(0).animate({top:'-400px',opacity: 1},2000)
       $('.screenblac').eq(0).animate({opacity:'0.2'},"slow");
       var that = this;
-      axios.get('http://localhost:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
+      axios.get('http://111.230.155.152:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
         that.commentsAll = res.data.dynaty.comments
       })
     },
@@ -143,7 +143,7 @@ export default {
           _id,
           username
         })
-        axios.post('http://localhost:3000/api/dynary/postcomments',postdata).then(function(res){
+        axios.post('http://111.230.155.152:3000/api/dynary/postcomments',postdata).then(function(res){
           console.log(res)
           that.commentsAll = res.data.newContent.comments;
           that.msg = '';
@@ -168,7 +168,7 @@ export default {
 　　　'$route' (to, from) {
         var that = this;
         console.log(this.$route.query._id)
-        axios.get('http://localhost:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
+        axios.get('http://111.230.155.152:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
           console.log(res.data.dynaty)
           that.getDynatyInfo = res.data.dynaty;
           that.note.backgroundImage = 'url('+ res.data.dynaty._img +')';
@@ -179,7 +179,7 @@ export default {
             that.PointArical()
           },1000)
         });
-        axios.get('http://localhost:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
+        axios.get('http://111.230.155.152:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
           that.commentsAll = res.data.dynaty.comments
         })
 　　}
@@ -188,7 +188,7 @@ export default {
     this.userInfo=JSON.parse(localStorage.getItem('userInfo'));
     var that = this;
     console.log(this.$route.query._id)
-    axios.get('http://localhost:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
+    axios.get('http://111.230.155.152:3000/api/dynary/getoneDynaty?_id='+that.$route.query._id).then(function(res){
       console.log(res.data.dynaty)
       that.getDynatyInfo = res.data.dynaty;
       that.note.backgroundImage = 'url('+ res.data.dynaty._img +')';

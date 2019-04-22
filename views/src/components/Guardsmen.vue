@@ -82,7 +82,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/getAllList',
+                url:'http://111.230.155.152:3000/api/user/getAllList',
                 success:function(result){
                     that.usersList=result.usersList;
                     that.usersList.forEach(item => item.hail_stadus = 'none' )
@@ -93,7 +93,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/FriendRequest?to_id='+user_id+'&from_user='+that.userInfo._id,
+                url:'http://111.230.155.152:3000/api/user/FriendRequest?to_id='+user_id+'&from_user='+that.userInfo._id,
                 success:function(result){
                     console.log(result);
                     that.hailsIdList=result.Hailsinfo;
@@ -116,7 +116,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/user/getAllHailsInfo?_id='+that.userInfo._id,
+                url:'http://111.230.155.152:3000/api/user/getAllHailsInfo?_id='+that.userInfo._id,
                 success:function(result){
                     console.log(result)
                     that.hailsIdList=result.Hailsinfo;

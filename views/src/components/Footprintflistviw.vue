@@ -47,7 +47,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/boards/getOneBoardinfo?id='+b_id,
+                url:'http://111.230.155.152:3000/api/boards/getOneBoardinfo?id='+b_id,
                 success:function(result){
                     that.board=result.newInfo;
 
@@ -59,7 +59,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'get',
-                url:'http://localhost:3000/api/boards/delete?id='+board_id,
+                url:'http://111.230.155.152:3000/api/boards/delete?id='+board_id,
                 success:function(result){
                     that.$router.push({
                         path: '/Cheng/footprint/successInfo',
@@ -78,7 +78,7 @@ export default {
             }else{
                 $.ajax({
                     type:'post',
-                    url:'http://localhost:3000/api/boards/comment/post',
+                    url:'http://111.230.155.152:3000/api/boards/comment/post',
                     data:{
                         b_Id,
                         messageContent:that.addcomInfo,
@@ -99,7 +99,7 @@ export default {
             var that = this;
             $.ajax({
                 type:'post',
-                url:'http://localhost:3000/api/boards/comment/delete',
+                url:'http://111.230.155.152:3000/api/boards/comment/delete',
                 data:{
                     c,
                     b_Id

@@ -70,7 +70,7 @@ export default {
                 }else{
                     $.ajax({
                         type:'post',
-                        url:'http://localhost:3000/api/user/UpateInfo',
+                        url:'http://111.230.155.152:3000/api/user/UpateInfo',
                         data:params,
                         dataType: 'JSON',  
                         cache: false,  
@@ -101,7 +101,7 @@ export default {
                 console.log(params);
                 $.ajax({
                     type:'post',
-                    url:'http://localhost:3000/api/user/UpateInfoImg',
+                    url:'http://111.230.155.152:3000/api/user/UpateInfoImg',
                     data:params,
                     dataType: 'JSON',  
                     cache: false,  

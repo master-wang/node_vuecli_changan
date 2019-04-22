@@ -97,7 +97,7 @@ export default {
                 }else{
                     $.ajax({
                         type:'post',
-                        url:'http://localhost:3000/api/boards/addInfo',
+                        url:'http://111.230.155.152:3000/api/boards/addInfo',
                         data:that.update_userInfo,
                         dataType:'json',
                         success:function(result){
@@ -148,7 +148,7 @@ export default {
                             console.log(formData);
                             $.ajax({
                                 type:'post',
-                                url:'http://localhost:3000/api/boards/addInfoImg',
+                                url:'http://111.230.155.152:3000/api/boards/addInfoImg',
                                 data:formData,
                                 dataType: 'JSON',  
                                 cache: false,  
