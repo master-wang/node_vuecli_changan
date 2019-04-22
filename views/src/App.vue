@@ -160,9 +160,9 @@ export default {
       $(el).find('.boards-img').eq(0).animate({backgroundSize: '100%',},"slow");
     },
     select(i,_id){
-      // var app_box_se = this.xian[i];
-      // app_box_se.note.height = "85%";
-      // $('.boards-artica').eq(0).css(app_box_se.note);
+      var app_box_se = this.xian[i];
+      app_box_se.note.height = "85%";
+      $('.boards-artica').eq(0).css(app_box_se.note);
       console.log(_id)
       this.$router.push({
         path: '/Dynasty',

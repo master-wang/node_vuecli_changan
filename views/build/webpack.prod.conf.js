@@ -54,7 +54,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
-    // new OptimizeCSSPlugin({ //取消重复css的引用
+    // 取消重复css的引用
+    // new OptimizeCSSPlugin({
     //   cssProcessorOptions: config.build.productionSourceMap
     //     ? { safe: true, map: { inline: false } }
     //     : { safe: true }

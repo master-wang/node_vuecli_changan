@@ -7,7 +7,7 @@
     <div class="content" >
       <div class="container">
         <div class="title">
-          <button class="btn linghtRed" @click="showComments()"> {{getDynatyInfo.name}} </button> <span style="display:inline-block;margin-left:150px;"></span>| {{getDynatyInfo.set_time}} | {{getDynatyInfo.build_it}}
+          <button class="btn linghtRed" @click="showComments()"> {{getDynatyInfo.name}} </button> <span style="display:inline-block;margin-left:180px;"></span>| {{getDynatyInfo.set_time}} | {{getDynatyInfo.build_it}}
         </div>
         <h1>{{pointH1}}</h1>
 

@@ -339,40 +339,10 @@ if (document.location.search.match(/type=embed/gi)) {
     position: relative;
     float: left;
 }
-.box:before{
-    content: "";
-    display: block;/*dierge meiyou*/
-    border: 30px solid rgba(255, 255, 255, 0.3);
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    opacity: 1;
-    z-index: 2;
-    transition: all 1s ease 0s;
-}
+
 .box:hover:before{ border: 1px solid rgba(255, 255, 255, 0.18); }
-.box:after{
-    content: "";
-    display: block;
-    border: 10px solid #fff;
-    position: absolute;
-    top: 35px;
-    left: 40px;
-    bottom: 35px;
-    right: 35px;
-    opacity: 1;
-    z-index: 1;
-    transition: all 0.3s ease 0s;
-}
-.box:hover:after{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-}
+
+
 .box img{
     width: 307px;
     height: 420px;
