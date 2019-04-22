@@ -278,7 +278,7 @@ router.post('/boards/addInfoImg',upload.array("file",20),function(req,res){
         b_disc,b_disc,
         b_release:br_id
     }).save().then(function(Boardinfo){
-        imgpath = '/public/upimgs/';
+        imgpath = 'http://111.230.155.152:3000/upimgs/';
         user_img = '';
         Bod_imgs = []
         console.log(Boardinfo);
@@ -556,7 +556,7 @@ router.post('/dynary/add',upload.single('photo'),function(req,res){
         desc,
         _img:imgpath
     }).save().then(function(dynaryinfo){
-        imgpath = 'http://localhost:3000/upimgs/';
+        imgpath = 'http://111.230.155.152:3000/upimgs/';
         user_img = '';
         Bod_imgs = [];
         console.log(dynaryinfo);
