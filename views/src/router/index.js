@@ -32,6 +32,7 @@ import xianquanjing from '@/components/xianquanjing'
 
 import dytang from '@/components/dytang'
 import dyxihan from '@/components/dyxihan'
+import indexshouye from '@/components/indexshouye'
 Vue.use(Router)
 Vue.use(resour)
 
@@ -39,6 +40,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'indexshouye',
+      component: indexshouye
+    },
+    {
+      path: '/Index',
       name: 'Index',
       component: Index
     },

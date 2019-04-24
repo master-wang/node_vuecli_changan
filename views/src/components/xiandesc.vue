@@ -1,7 +1,7 @@
 <template>
-    <div id="theme-content">
+    <div id="theme-content" class="desc">
 
-        <div class="wrapper">
+        <div class="wrapperdesc">
             <ul class="content">
                 <li class="item">
                     <div class="inner">
@@ -172,7 +172,7 @@ export default {
     },
     mounted(){
         //手风琴
-        var $wrap = $(".wrapper");
+        var $wrap = $(".wrapperdesc");
         init();
         function init() {
 
@@ -235,18 +235,19 @@ export default {
     }
 }
 </script>
-<style scope>
+<style scope lang="scss">
 #theme-content {
     position: relative;
     padding-left: 50px;
     z-index: 100;
 }
+.desc{
 .xianjianjie{
     position: absolute;
     top: 5px;
     left: 20px;
 }
-.wrapper{
+.wrapperdesc{
     position: absolute;
 	width: 85%;
 	height: 920px;
@@ -256,7 +257,7 @@ export default {
 	align-items: center;    /* opacity: 0.5; */
 }
 
-.wrapper .content{
+.wrapperdesc .content{
     display: flex;
     width: 80%;
     height: 80%;
@@ -265,7 +266,7 @@ export default {
     justify-content: space-between;
 }
 
-.wrapper .content .item{
+.wrapperdesc .content .item{
     position: relative;
      width: 12%;
      height: 100%;
@@ -279,45 +280,45 @@ export default {
      
 }
 
-.wrapper .content .item .inner{
+.wrapperdesc .content .item .inner{
     width: 100%;
     height: 100%;
     position: relative;
 }
 /*背景图片动画*/
-.wrapper .content .item:nth-of-type(1) .inner{
+.wrapperdesc .content .item:nth-of-type(1) .inner{
     transition: transform 0.5s ease-in 0.1s;
     
 }
-.wrapper .content .item:nth-of-type(2) .inner{
+.wrapperdesc .content .item:nth-of-type(2) .inner{
     transition: transform 0.5s ease-in 0.2s;
     
 }
-.wrapper .content .item:nth-of-type(3) .inner{
+.wrapperdesc .content .item:nth-of-type(3) .inner{
     transition: transform 0.5s ease-in 0.3s;
     
 }
-.wrapper .content .item:nth-of-type(4) .inner{
+.wrapperdesc .content .item:nth-of-type(4) .inner{
     transition: transform 0.5s ease-in 0.4s;
     
 }
-.wrapper .content .item:nth-of-type(5) .inner{
+.wrapperdesc .content .item:nth-of-type(5) .inner{
     transition: transform 0.5s ease-in 0.5s;
     
 }
-.wrapper .content .item:nth-of-type(6) .inner{
+.wrapperdesc .content .item:nth-of-type(6) .inner{
     transition: transform 0.5s ease-in 0.6s;
     
 }
-.wrapper .content .item:nth-of-type(7) .inner{
+.wrapperdesc .content .item:nth-of-type(7) .inner{
     transition: transform 0.5s ease-in 0.7s;
     
 }
-.wrapper .content .item:nth-of-type(8) .inner{
+.wrapperdesc .content .item:nth-of-type(8) .inner{
     transition: transform 0.5s ease-in 0.8s;
     
 }
-.wrapper .content .item .inner .bjPic{
+.wrapperdesc .content .item .inner .bjPic{
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -327,12 +328,12 @@ export default {
 
 
 
-.wrapper .content .item:nth-of-type(1) .inner .bjPic{
+.wrapperdesc .content .item:nth-of-type(1) .inner .bjPic{
     background-image: url("../assets/guchangan.jpg");
     background-size: cover;
     background-position: center;
 }
-.wrapper .content .item:nth-of-type(2) .inner .bjPic{
+.wrapperdesc .content .item:nth-of-type(2) .inner .bjPic{
    background-image: url("../assets/yangroupaomo.jpeg");
     background-size: cover;
     background-position: center;
@@ -342,12 +343,12 @@ export default {
     background-size: cover;
     background-position: center;
 }
-.wrapper .content .item:nth-of-type(4) .inner .bjPic{
+.wrapperdesc .content .item:nth-of-type(4) .inner .bjPic{
    background-image: url("../assets/meinv.jpeg");
     background-size: cover;
     background-position: center;
 }
-.wrapper .content .item:nth-of-type(5) .inner .bjPic{
+.wrapperdesc .content .item:nth-of-type(5) .inner .bjPic{
     background-image: url("../assets/maidongxi.jpg");
     background-size: cover;
     background-position: center;
@@ -357,17 +358,17 @@ export default {
     background-size: cover;
     background-position: center;
 }
-.wrapper .content .item:nth-of-type(7) .inner .bjPic{
+.wrapperdesc .content .item:nth-of-type(7) .inner .bjPic{
      background-image: url("../assets/shushi.jpeg");
     background-size: cover;
     background-position: center;
 }
-.wrapper .content .item:nth-of-type(8) .inner .bjPic{
+.wrapperdesc .content .item:nth-of-type(8) .inner .bjPic{
     background-image: url("../assets/chuanshuo.jpg");
     background-size: cover;
     background-position: center;
 }
-.wrapper .content .item .inner .dir{
+.wrapperdesc .content .item .inner .dir{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -375,33 +376,33 @@ export default {
     transition: opacity 0.5s linear 0.3s;
 }
 
-.wrapper .content .item:hover .inner .bjPic{
+.wrapperdesc .content .item:hover .inner .bjPic{
     opacity: 1;
 }
-.wrapper .content .item:hover .inner .dir{
+.wrapperdesc .content .item:hover .inner .dir{
     font-size: 18px;
     font-weight: bold;
 }
-.wrapper .content .item .showBox{
+.wrapperdesc .content .item .showBox{
     width: 100%;
     height: 100%;
     /* position: absolute; */
     opacity: 0;
 }
-.wrapper .content .item .showBox .showBox-dir{
+.wrapperdesc .content .item .showBox .showBox-dir{
     position: absolute;
     left: 50px;
     top: 50px;
 }
-.wrapper .content .item .showBox .close{
+.wrapperdesc .content .item .showBox .close{
     width: 30px;
     height: 30px;
     position: absolute;
     right: 50px;
     top: 50px;
 }
-.wrapper .content .item .showBox .close::before,
-.wrapper .content .item .showBox .close::after{
+.wrapperdesc .content .item .showBox .close::before,
+.wrapperdesc .content .item .showBox .close::after{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -412,10 +413,10 @@ export default {
     height: 2px;
     background-color: #fff;
 }
-.wrapper .content .item .showBox .close::before{
+.wrapperdesc .content .item .showBox .close::before{
     transform: rotateZ(45deg);
 }
-.wrapper .content .item .showBox .close::after{
+.wrapperdesc .content .item .showBox .close::after{
     transform: rotate(-45deg);
 }
 
@@ -450,4 +451,6 @@ p{
 .close{
     color:red;
 }
+}
+
 </style>

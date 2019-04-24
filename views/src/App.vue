@@ -4,7 +4,7 @@
     <nav class="navbar navbar-inverse ">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#" style="font-size:30px" ><h1><router-link to='/' class="linghtBlue"> 长安</router-link></h1> </a>
+          <a class="navbar-brand" href="#" style="font-size:30px" ><h1><router-link to='/Index' class="linghtBlue"> 长安</router-link></h1> </a>
           <a class="navbar-brand" href="#" style="font-size:30px:margin-left:100px;" ><h1><router-link to='/changan3D' class="linghtBlue"> 3D长安</router-link></h1> </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -18,7 +18,7 @@
     <!-- 右部图片展示历史遗迹 -->
     <div class="row">
       <div id="boards-imgs">
-        <div v-for="(item,index) in dy" :key="index"  @click="select(index,item._id)" >
+        <div v-for="(item,index) in dy" :key="index"  @click="select(index,item._id,item._img)" >
           <router-link to='/Dynasty' href="#" class="thumbnail" >
             <div class="boards-img"  >
               <img :src="item._img" alt="" style="position:absolute;width:240px;height: 170px;">
@@ -159,9 +159,10 @@ export default {
       $(el).find('.boards-img-tint').eq(0).animate({backgroundColor: 'black',opacity:'0.9'},"slow");
       $(el).find('.boards-img').eq(0).animate({backgroundSize: '100%',},"slow");
     },
-    select(i,_id){
+    select(i,_id,img){
       var app_box_se = this.xian[i];
       app_box_se.note.height = "85%";
+      app_box_se.note.backgroundImage = "url(" + img + ")";
       $('.boards-artica').eq(0).css(app_box_se.note);
       console.log(_id)
       this.$router.push({

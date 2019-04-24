@@ -246,6 +246,9 @@
 <script>
 export default {
     name: 'xianjianjie',
+    methods:{
+        
+    },
     mounted(){
         //轮播图
         var lists = document.getElementsByName('list');
@@ -262,10 +265,10 @@ export default {
         }
 
         //扇子
-        $('.historyb').on('mousemove',function(){
-            $(this).css({'transform':'rotateZ(-' + e.y / 50 + 'deg)'})
-            // this.historyb.style.transform = 'rotateZ(-' + e.y / 50 + 'deg)'
-        })
+        // $('.historyb').on('mousemove',function(e){
+        //     $(this).css({'transform':'rotateZ(-' + e.y / 50 + 'deg)'})
+        //     // this.historyb.style.transform = 'rotateZ(-' + e.y / 50 + 'deg)'
+        // })
         // document.addEventListener('mousemove', function (e) {
         //     this.historyb.style.transform = 'rotateZ(-' + e.y / 50 + 'deg)'
         // }, false);
@@ -283,7 +286,7 @@ export default {
 #main{
     position: absolute;
     width: 83%;
-    height: 900px;
+    height: 1000px;
     overflow-y: scroll;
     text-align: center;
     background-color: #e4e4e4;
@@ -1354,4 +1357,122 @@ p.codrops-demos a.current-demo:hover{
 }
 
 }
+.historyb{
+    margin-top: 100px;
+    color: transparent;
+    position: absolute;
+    left: 370px;
+    width: 100px;
+    height: 800px;
+}
+
+
+.changan{
+    font-size:20px;
+    font-weight:bold;
+    color:transparent;
+    font-family: FZShuTi, Times, serif;
+}
+.historyb:hover .changan{
+    color:rgb(223, 92, 53);
+}
+.changan img{
+    display: none;
+}
+.historyb:hover .changan img{
+    display: inline;
+}
+
+.historyb>div{
+    width:10px;
+    height:500px;
+    background:#ddd6d6;
+    position:absolute;
+    word-break: break-all;
+    top:10%;
+    left:50%;
+    transform-origin:center 90%;
+    transition: transform 2s;
+    border-left:1px solid #dddddd;
+    border-right:1px solid #dddddd;
+  }
+
+  .historyb div p{
+  
+      width: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+  .historyb:hover{
+    color: black;
+}
+  .historyb>div:before,
+  .historyb>div:after{
+    content: "";
+    position:absolute;
+    height:300px;
+    width:20px;
+  }
+  .historyb>div:before{
+    content: "";
+    border-top: 300px solid #dddddd;
+    border-right:25px solid transparent;
+  }
+  .historyb>div:after{
+    left:-35px;
+    border-top:300px solid white;
+    border-left:25px solid transparent;
+  }
+  .historyb>:first-of-type:after,
+  .historyb>div:last-of-type:before,
+  .historyb>div:last-of-type:after{
+    border-top: 300px solid #d4d1d1;
+  }
+  body:hover .historyb>div:nth-of-type(1){
+    transform:rotate(-70deg)
+  }
+ body:hover .historyb>div:nth-of-type(2){
+    transform:rotate(-60deg)
+  }
+ body:hover .historyb>div:nth-of-type(3){
+    transform:rotate(-50deg)
+  }
+  body:hover .historyb>div:nth-of-type(4){
+    transform:rotate(-40deg)
+  }
+  body:hover .historyb>div:nth-of-type(5){
+    transform:rotate(-30deg)
+  }
+  body:hover .historyb>div:nth-of-type(6){
+    transform:rotate(-20deg)
+  }
+  body:hover .historyb>div:nth-of-type(7){
+    transform:rotate(-10deg)
+  }
+  body:hover .historyb>div:nth-of-type(8){
+    transform:rotate(0deg)
+  }
+  body:hover .historyb>div:nth-of-type(9){
+    transform:rotate(10deg)
+  }
+  body:hover .historyb>div:nth-of-type(10){
+    transform:rotate(20deg)
+  }
+  body:hover .historyb>div:nth-of-type(11){
+    transform:rotate(30deg)
+  }
+  body:hover .historyb>div:nth-of-type(12){
+    transform:rotate(40deg)
+  }
+  body:hover .historyb>div:nth-of-type(13){
+    transform:rotate(50deg)
+  }
+  body:hover .historyb>div:nth-of-type(14){
+    transform:rotate(60deg)
+  }
+  body:hover .historyb>div:nth-of-type(15){
+    transform:rotate(70deg)
+  }
 </style>
